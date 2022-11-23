@@ -1,3 +1,8 @@
+## NOTES
+<Link></Link> from 'next/router' is used for client side routing within pages in the next application, any external page visit should use <a></a>. using <a> on internal next pages creates a new server call.
+
+router.push('/...') router.replace('/...')
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
