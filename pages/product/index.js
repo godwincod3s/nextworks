@@ -1,14 +1,12 @@
-// import Link from 'next/router'
+import Link from 'next/link'
 
 function ProductList({productID = [1,2,3,4,5]}){
-    {productID.map((item, i) => {
-       // <div><Link href={`/products/${item}`} >Product{item}</Link></div>
+    {return productID.map((item, i) => {
         if(i === productID.lastIndexOf(productID[productID.length - 1])){
-            // <div><Link href={`/products/${item}`} replace>Product{item}</Link></div>
+            return <div key={i}><Link href={`/product/${item}`} replace>Product{item}</Link></div>
         }
+       return <div key={i}><Link href={`/product/${item}`} >Product{item}</Link></div>
     })}
-
-    return<div>Product1</div>
 }
 
 export default ProductList
