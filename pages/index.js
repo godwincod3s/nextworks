@@ -18,6 +18,7 @@ function Home() {
     <nav>
       <Link href="/about">About</Link>
       <Link href="/blog">Blog</Link>
+      <Link href="/blog/posts">Posts</Link>
       <Link href="/profile">Profile</Link>
       <Link href="/product">Products</Link>
       <Link href="/docs">Docs</Link>
